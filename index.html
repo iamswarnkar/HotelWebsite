@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Website</title>
+
+  <!-- FAVICON -->
+
+  <!-- Bootstrap 5 CDN Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- aos CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- Custom File's Link -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responStyle.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+  <!-- Navbar section -->
+  <header class="header_wrapper">
+    <div class="container-fluid">
+      <div  class="row text-center justify-content-center align-items-center top_hed">
+        <div class=" col-lg-6 col-md-6">
+          <a class="text-white " href="mailto:test@gmail.com"><i class="fas fa-envelope "></i>
+            <span> test@gmail.com </span></a> &nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="text-white" href="tel:+91 789543210"><i class="fas fa-mobile-alt "></i>
+            <span> +91 7896452130</span></a>
+        </div>
+        <div class=" col-lg-6 col-md-6 d-lg-inline mt-1">
+          <ul class=" social-network d-flex justify-content-center align-items-center ps-5">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>&nbsp;&nbsp;
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" class="img-fluid" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i id="bar" class="navbar-toggler-icon fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">SERVICE & AMENITIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT US</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0"> 
+              <a class="main-btn" href="#">Book Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#LocalAttraction">Local Attraction</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar section exit -->
+
+  <!-- Banner section -->
+  <section id="home" class="banner_wrapper p-0">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(images/Banner/Banner-1.jpg);">
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Hotel Panorama</h1>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(images/Banner/Banner-2.jpg);">
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Hotel Panorama</h1>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(images/Banner/Banner-3.jpeg);">
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Hotel Panorama</h1>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(images/Banner/Banner-4.jpeg);">
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Hotel Panorama</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="container booking-area">
+      <form class="row">
+        <div class="col-lg mb-3 mb-lg-0">
+          <input type="date" class="form-control" placeholder="Date">
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <input type="date" class="form-control" placeholder="Date">
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <select class="form-select">
+            <option selected>Adults</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <select class="form-select">
+            <option selected>Children</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <button type="submit" class="main-btn rounded-2 px-lg-3">Check Availability</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Banner section exit -->
+
+  <!-- About section -->
+  <section id="about" class="about_wrapper">
+    <div class="container">
+      <div class="row flex-lg-row flex-column-reverse ">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h3>Welcome to <span>Hotel Panorama</span></h3>
+          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+          <div class="row">
+            <div class="col-sm-6 ">
+              <ul class="list-unstyled mr-auto">
+                <li><i class="fas fa-paper-plane"></i><span class="ttm-list-li-content">Pets are allowed.</span></li>
+                <li><i class="fas fa-paper-plane"></i><span class="ttm-list-li-content">Non-smoking rooms</span></li>
+                <li><i class="fas fa-paper-plane"></i><span class="ttm-list-li-content">Free parking</span></li>
+                <li><i class="fa fa-paper-plane"></i><span class="ttm-list-li-content">Clothes rack</span></li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li><i class="fas fa-paper-plane"></i><span class="ttm-list-li-content">Swimming pool</span></li>
+                <li><i class="fas fa-paper-plane"></i><span class="ttm-list-li-content">Spa</span></li>
+                <li><i class="fas fa-paper-plane"></i><span class="ttm-list-li-content">24-hour front desk</span></li>
+                <li><i class="fas fa-paper-plane"></i><span class="ttm-list-li-content">Inner courtyard view</span></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="main-btn mt-4">Explore</a>
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+          <img src="images/Banner/Banner-13.jpeg" class="img-fluid" alt="About Us">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- About section exit -->
+
+  <!-- Services section -->
+  <section id="services" class="services_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h3>We Provide Best Services</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mb-4" data-aos="flip-up">
+          <div class="card p-0 rounded-3 main">
+            <div class="items">
+              <h4 class="title"><i class="fas fa-paw"></i>Pets</h4>
+              <i class="fas fa-forward"></i><span>Pets are allowed. No extra charges.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 " data-aos="flip-up">
+          <div class="card p-0 rounded-3 main">
+            <div class="items">
+              <h4 class="title"><i class="fas fa-wifi"></i>Internet</h4>
+              <span><i class="fas fa-forward"></i>WiFi is available in all areas and is free of charge.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 " data-aos="flip-up">
+          <div class="card p-0 rounded-3 main">
+            <div class="items">
+              <h4 class="title"><i class="fas fa-parking"></i>Parking</h4>
+              <span> <i class="fas fa-forward"></i>Free private parking is available on site (reservation is not
+                needed)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 " data-aos="flip-up">
+          <div class="card p-0 rounded-3 main">
+            <div class="items">
+              <h4 class="title"><i class="fas fa-users"></i>Services</h4>
+              <span> <i class="fas fa-forward"></i>24-hour front desk
+                needed)</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 " data-aos="flip-up">
+          <div class="card p-0 rounded-3 main">
+            <div class="items">
+              <h4 class="title"><i class="fas fa-clinic-medical"></i>General</h4>
+              <span> <i class="fas fa-forward"></i> Air conditioning</span> <br />
+              <span> <i class="fas fa-forward"></i>Non-smoking rooms</span> <br />
+              <span> <i class="fas fa-forward"></i>Spa</span>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 " data-aos="flip-up">
+          <div class="card p-0 rounded-3 main">
+            <div class="items">
+              <h4 class="title"><i class="fas fa-swimming-pool"></i>Outdoor swimming pool</h4>
+              <span><i class="fas fa-forward"></i>(Free) All pools are free of charge</span> <br />
+              <span><i class="fas fa-forward"></i>Seasonal</span> <br />
+              <span><i class="fas fa-forward"></i> Fenced pool</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Services section Exit -->
+
+  <!-- Room section -->
+  <section id="room" class="room_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h3>Our Favorite Rooms</h3>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-up">
+        <div class=" col-lg-3 col-md-6 mb-4">
+          <div class="shadow card p-0 rounded-3 main">
+            <div class="room-items">
+              <img src="images/Rooms/room-9.jpeg" class="img-fluid" alt="">
+            </div>
+            <h5 class="mt-4 text-center">Double Room with Balcony and Sea View</h5>
+            <p class="p-3">With a balcony with sea views, this air-conditioned double room is equipped with a satellite
+              flat-screen TV and safety deposit box. The private bathroom comes with a shower and hairdryer.</p>
+            <div class="mx-2 mb-4 text-center">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="main-btn ">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-6 mb-4">
+          <div class="shadow card p-0 rounded-3 main">
+            <div class="room-items">
+              <img src="images/Rooms/room-9.jpeg" class="img-fluid" alt="">
+            </div>
+            <h5 class="mt-4 text-center">Suite with Balcony and Sea View</h5>
+            <p class="p-3">With a balcony with sea views, this air-conditioned double room is equipped with a satellite
+              flat-screen TV and safety deposit box. The private bathroom comes with a shower and hairdryer.</p>
+            <div class="mx-2 mb-4 text-center">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="main-btn ">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-6 mb-4">
+          <div class="shadow card p-0 rounded-3 main">
+            <div class="room-items">
+              <img src="images/Rooms/room-9.jpeg" class="img-fluid" alt="">
+            </div>
+            <h5 class="mt-4 text-center">Superior Suite with Terrace and Sea View</h5>
+            <p class="p-3">With a balcony with sea views, this air-conditioned double room is equipped with a satellite
+              flat-screen TV and safety deposit box. The private bathroom comes with a shower and hairdryer.</p>
+            <div class="mx-2 mb-4 text-center">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="main-btn ">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-6 mb-4">
+          <div class="shadow card p-0 rounded-3 main">
+            <div class="room-items">
+              <img src="images/Rooms/room-9.jpeg" class="img-fluid" alt="">
+            </div>
+            <h5 class="mt-4 text-center">Premium Suite with Jacuzzi - Terrace and Sea View</h5>
+            <p class="p-3">With a balcony with sea views, this air-conditioned double room is equipped with a satellite
+              flat-screen TV and safety deposit box. The private bathroom comes with a shower and hairdryer.</p>
+            <div class="mx-2 mb-4 text-center">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="main-btn ">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-up">
+        <div class=" col-lg-3 col-md-6 mb-4">
+          <div class="shadow card p-0 rounded-3 main">
+            <div class="room-items">
+              <img src="images/Rooms/room-9.jpeg" class="img-fluid" alt="">
+            </div>
+            <h5 class="mt-4 text-center">Double Room with Balcony and Sea View</h5>
+            <p class="p-3">With a balcony with sea views, this air-conditioned double room is equipped with a satellite
+              flat-screen TV and safety deposit box. The private bathroom comes with a shower and hairdryer.</p>
+            <div class="mx-2 mb-4 text-center">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="main-btn ">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-6 mb-4">
+          <div class="shadow card p-0 rounded-3 main">
+            <div class="room-items">
+              <img src="images/Rooms/room-9.jpeg" class="img-fluid" alt="">
+            </div>
+            <h5 class="mt-4 text-center">Suite with Balcony and Sea View</h5>
+            <p class="p-3">With a balcony with sea views, this air-conditioned double room is equipped with a satellite
+              flat-screen TV and safety deposit box. The private bathroom comes with a shower and hairdryer.</p>
+            <div class="mx-2 mb-4 text-center">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="main-btn ">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-6 mb-4">
+          <div class="shadow card p-0 rounded-3 main">
+            <div class="room-items">
+              <img src="images/Rooms/room-9.jpeg" class="img-fluid" alt="">
+            </div>
+            <h5 class="mt-4 text-center">Superior Suite with Terrace and Sea View</h5>
+            <p class="p-3">With a balcony with sea views, this air-conditioned double room is equipped with a satellite
+              flat-screen TV and safety deposit box. The private bathroom comes with a shower and hairdryer.</p>
+            <div class="mx-2 mb-4 text-center">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="main-btn ">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-6 mb-4">
+          <div class="shadow card p-0 rounded-3 main">
+            <div class="room-items">
+              <img src="images/Rooms/room-9.jpeg" class="img-fluid" alt="">
+            </div>
+            <h5 class="mt-4 text-center">Premium Suite with Jacuzzi - Terrace and Sea View</h5>
+            <p class="p-3">With a balcony with sea views, this air-conditioned double room is equipped with a satellite
+              flat-screen TV and safety deposit box. The private bathroom comes with a shower and hairdryer.</p>
+            <div class="mx-2 mb-4 text-center">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" class="main-btn ">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Room section Exit -->
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-slide">
+            <div id="slides" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Rooms/room-1.jpeg" class="d-block w-100" alt="Images Not Found">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Rooms/room-1.jpeg" class="d-block w-100" alt="Images Not Found">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Rooms/room-1.jpeg" class="d-block w-100" alt="Images Not Found">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#slides" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#slides" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-data">
+            <div class="modal_items mt-3">
+              <span><i class="fas fa-hand-point-right"></i>18 m²</span>
+              <span><i class="fas fa-hand-point-right"></i>BalconyOcean view </span>
+              <span><i class="fas fa-hand-point-right"></i>Air conditioning </span>
+              <span><i class="fas fa-hand-point-right"></i>Attached bathroom </span>
+              <span><i class="fas fa-hand-point-right"></i>Flat-screen TV </span>
+              <span><i class="fas fa-hand-point-right"></i>Sound proof </span>
+              <span><i class="fas fa-hand-point-right"></i>Mini bar </span>
+              <span><i class="fas fa-hand-point-right"></i>Free WiFi </span>
+              <span><i class="fas fa-hand-point-right"></i>Free parking </span>
+              <p>With a balcony with sea views, this air-conditioned double room is equipped with a satellite
+                flat-screen TV and safety deposit box. The private bathroom comes with a shower and hairdryer.</p>
+              <div class="bath-items">
+                <div>
+                  <h5>In your private bathroom</h5>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check"></i> Free toiletries </li>
+                    <li><i class="fas fa-check"></i> Shower </li>
+                    <li><i class="fas fa-check"></i> Toilet </li>
+                    <li><i class="fas fa-check"></i> Towels </li>
+                    <li><i class="fas fa-check"></i> Hairdryer </li>
+                    <li><i class="fas fa-check"></i> Hairdryer </li>
+                    <li><i class="fas fa-check"></i> Toilet paper </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5>Room Facilities</h5>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check"></i> Free toiletries </li>
+                    <li><i class="fas fa-check"></i> Shower </li>
+                    <li><i class="fas fa-check"></i> Toilet </li>
+                    <li><i class="fas fa-check"></i> Towels </li>
+                    <li><i class="fas fa-check"></i> Hairdryer </li>
+                    <li><i class="fas fa-check"></i> Hairdryer </li>
+                    <li><i class="fas fa-check"></i> Toilet paper </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Exit -->
+  <!-- Gallery section -->
+  <section id="gallery" class="gallary_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h3>Our Gallery</h3>
+        </div>
+      </div>
+    </div>
+    <div class="our-partner-slider">
+      <div class="container swiper our-partner">
+        <div class=" swiper-wrapper">
+          <div class="swiper-slide"><img class="img-fluid" src="images/Rooms/room-1.jpeg"></div>
+          <div class="swiper-slide"><img class="img-fluid" src="images/Rooms/room-2.jpeg"></div>
+          <div class="swiper-slide"><img class="img-fluid" src="images/Rooms/room-3.jpeg"></div>
+          <div class="swiper-slide"><img class="img-fluid" src="images/Rooms/room-4.jpeg"></div>
+          <div class="swiper-slide"><img class="img-fluid" src="images/Rooms/room-5.jpeg"></div>
+          <div class="swiper-slide"><img class="img-fluid" src="images/Rooms/room-6.jpeg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery section Exit -->
+
+    <!-- Local Attraction start -->
+    <section id="LocalAttraction" class=" attraction_wrapper"  >
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h3>Local Attraction</h3>
+          </div>
+        </div>
+          <div data-aos="zoom-in" class="row justify-content-between align-items-center">
+            <div class="col-sm-12 section-title text-center mb-5">
+            </div>
+              <div class="col-lg-5 mb-4 order-1 order-lg-1 mb-lg-0">
+                  <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+              </div>
+              <div class="col-lg-7 ps-lg-5 text-center order-2 order-lg-2 text-lg-start">
+                  <div class="my-3 my-lg-0">
+                      <h4 class="mb-5">Six Flags Magic Mountain</h4>
+                      <p>
+
+                          A 262-acre theme park famously known for their exhilarating roller-coasters and live entertainment.
+
+                          <br><br> 
+                          <i class="fas fa-map-marker-alt new"></i> 26101 Magic Mountain Pkwy, Valencia, CA 91355.
+                          
+                      </p>
+                      <a target="_blank" href="https://www.sixflags.com/magicmountain" class="main-btn mt-4">Know More</a>
+                  </div>
+              </div>
+              
+          </div> 
+      </div>
+      <div data-aos="zoom-in" class="container mt-5">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-7 ps-lg-5 order-2 order-lg-1 text-center text-lg-start">
+                <div class="my-3 my-lg-0">
+                    <h4 class="mb-5"> Universal Studio</h4>
+                    <p>
+                      One of the oldest and most famous film studio and theme park. Full fun and entertainment for all age group from ride dine and shop and movies too. 
+                      Unforgettable a guided bus tour of behind the scene film sets and studios.
+                      <br> <br>
+                      <i class="fas fa-map-marker-alt new"></i> 100 Universal City Plaza, Universal City, CA 91608
+                    </p>
+                    <a target="_blank" href="https://www.universalstudioshollywood.com/web/en/us" class="main-btn mt-4">Know More</a>
+
+                </div>
+            </div>
+            <div class="col-lg-5 mb-4 order-1  mb-lg-0">
+              <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+          </div>
+        </div> 
+    </div>
+    <div data-aos="zoom-in" class="container mt-5">
+      <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5 mb-4 order-1 order-lg-1 mb-lg-0">
+              <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+          </div>
+          <div class="col-lg-7 ps-lg-5 text-center order-2  text-lg-start">
+              <div class="my-3 my-lg-0">
+                  <h4 class="mb-5">Nethercutt Musseum</h4>
+                  
+                  <p>
+                      Proudly known as one of America's five greatest automobile museums. Self-guided tours are available throughout the museum with the exception of "The Nethercutt Collection" where you will need to be accompanied by a tour guide.   The Collection consists of the lower salon, grand salon, automobile collectibles and antiques, and instruments. <br> <br> 
+                      <i class="fas fa-map-marker-alt new"></i>15151 Bledsoe St, Sylmar, CA 91342
+                  </p>
+                  <a target="_blank" href="https://www.nethercuttcollection.org/" class="main-btn mt-4">Know More</a>
+              </div>
+          </div>
+          
+      </div> 
+  </div>
+  <div data-aos="zoom-in" class="container mt-5">
+    <div class="row justify-content-between align-items-center">
+        <div class="col-lg-7 ps-lg-5 order-2 order-lg-1 text-center text-lg-start">
+            <div class="my-3 my-lg-0">
+                <h4 class="mb-5"> Wildlife Learning Center</h4>
+                
+                <p>
+                  Wildlife Learning Center is a zoological park dedicated to providing care to rescued animals and offers genral public a visit and also organizes tour. <br> <br> 
+                  <i class="fas fa-map-marker-alt new"></i> 16027 Yarnell St, Sylmar, CA 91342
+                </p>
+                <a href="https://wildlifelearningcenter.org/" target="_blank" class="main-btn mt-4">Know More</a>
+            </div>
+        </div>
+        <div class="col-lg-5 mb-4 order-1  mb-lg-0">
+         <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+      </div>
+    </div> 
+  </div>
+  <div data-aos="zoom-in" class="container mt-5">
+      <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5 mb-4 order-1 order-lg-1 mb-lg-0">
+              <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+          </div>
+          <div class="col-lg-7 ps-lg-5 text-center order-2 order-lg-2 text-lg-start">
+              <div class="my-3 my-lg-0">
+                  <h4 class="mb-5">Hollywood Walk of Fame</h4>
+                  <p> 
+                      The Hollywood Walk of Fame The famous sight attraction is comprised of over 2,600+ brass stars of famous celebrity of Hollywood from actor to director to Musician and more. Also see the Dolby theatre and famous Chinese Theatre Along and many more in lane. <br> <br>
+                      <i class="fas fa-map-marker-alt new"></i> 7018 Hollywood Blvd, Los Angeles, CA 90028
+                  </p>
+                  <a target="_blank" href="https://walkoffame.com/ " class="main-btn mt-4">Know More</a>
+              </div>
+          </div>
+          
+      </div> 
+  </div>
+  </section>
+
+
+     <!-- Local Attraction end -->
+
+
+ <section id="contact" class="contact_wrapper">
+        <div class="container ">
+            <div class="row mb-5">
+                <div class="col-sm-12 section-title text-center">
+                    <h3>Contact Info</h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                    <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+                    <p>Hospital Rd, batshi, Siliguri, West Bengal 734426</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                    <h4><i class="fas fa-phone-alt"></i>Phone</h4>
+                    <p>+91 7001024450</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                    <h4><i class="fas fa-envelope"></i> Email</h4>
+                    <p>test@gmail.com</p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-12 p-2">
+                    <div class="map">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.307026385977!2d88.17587791447667!3d26.606603779607102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e44d5a9e431e29%3A0x5f896212a3e32ca0!2sHira%20Jewellers!5e0!3m2!1sen!2sin!4v1666080956478!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-3"></div>
+                <div class="col-lg-6 pe-lg-5 text-lg-start text-center">
+                    <form method="post" action="sendmail.php">
+                        <h4 class="text-center mb-5">Write Your Message</h4>
+                        <div class="mb-4 ">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name..."
+                                autocomplete="off">
+                        </div>
+                        <div class="mb-4 mt-4">
+                            <input type="number" name="phoneNo" class="form-control" placeholder="Your Phone..."
+                                autocomplete="off">
+                        </div>
+                        <div class="mb-4 mt-4">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email..."
+                                autocomplete="off">
+                        </div>
+                        <div class="mb-4 mt-4">
+                            <textarea name="message" rows="8" class="form-control" id="message"
+                                placeholder="Write a Message..." autocomplete="off"></textarea>
+                        </div>
+                        <button type="submit" name="send" class="main-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer section -->
+  <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
+    <div class="container pb-3">
+      <div class="row">
+        <div class="text-center col-12">
+          <div class="logo">
+            <img src="images/logo.png" class="img-fluid" alt="">
+          </div>
+          <p class="text-white">Featuring an outdoor swimming pool, Hotel Panorama Sarande offers rooms in Sarande, a
+            3-minute walk from the beachfront. Free WiFi access is available throughout the property. With a balcony or
+            terrace with sea views, each air-conditioned room is equipped with a satellite flat-screen TV and safety
+            deposit box. The private bathroom comes with a bath or shower and hairdryer. Guests can enjoy quick snacks
+            at the bar. Sarande city centre is a 4-minute drive from Panorama Hotel.</p>
+        </div>
+      </div>
+      <hr class="text-white">
+      <div  class="row text-center">
+        <div class=" col-12 mt-5">
+          <h5>Stay Connected</h5>
+          <ul class=" social-network d-flex justify-content-center align-items-center p-0">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid copyright-section">
+      <p class="text-white">Copyright <a href="https://www.linkedin.com/in/pradyuman-kr/"><b>iamswarnkar</b></a> All Rights Reserved</p>
+    </div>
+  </section>
+  <!-- Footer section exit -->
+
+  <!-- Bootstrap 5 JS CDN Links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom Js Link -->
+  <script src="App.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
