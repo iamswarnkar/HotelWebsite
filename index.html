@@ -26,7 +26,7 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
   <!-- Navbar section -->
   <header class="header_wrapper">
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <div  class="row text-center justify-content-center align-items-center top_hed">
         <div class=" col-lg-6 col-md-6">
           <a class="text-white " href="mailto:test@gmail.com"><i class="fas fa-envelope "></i>
@@ -43,11 +43,12 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="https://xpressinnmarshall.com/wp-content/uploads/2023/09/xpressinn-main-sign.png" class="img-fluid" alt="logo">
+          <img src="https://xpressinnmarshall.com/wp-content/uploads/2023/09/xpressinn-main-sign.png" class="img-fluid"
+            alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +72,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#LocalAttraction">Local Attraction</a>
             </li>
-             <li class="nav-item mt-3 mt-lg-0"> 
+            <li class="nav-item mt-3 mt-lg-0">
               <a class="main-btn" href="#">Book Now</a>
             </li>
           </ul>
@@ -119,10 +120,16 @@
     <div class="container booking-area">
       <form class="row">
         <div class="col-lg mb-3 mb-lg-0">
-          <input type="date" class="form-control" placeholder="Date">
+          <div class="form-floating">
+            <input type="date" class="form-control" id="start-date" placeholder="Check in date">
+            <label for="start-date">Start Date</label>
+          </div>
         </div>
         <div class="col-lg mb-3 mb-lg-0">
-          <input type="date" class="form-control" placeholder="Date">
+          <div class="form-floating">
+            <input type="date" class="form-control" id="start-date" placeholder="check out date Date">
+            <label for="start-date">Start Date</label>
+          </div>
         </div>
         <div class="col-lg mb-3 mb-lg-0">
           <select class="form-select">
@@ -160,7 +167,14 @@
       <div class="row flex-lg-row flex-column-reverse ">
         <div class="col-lg-6 text-center text-lg-start">
           <h3>Welcome to <span>Xecutive Inn and Suites</span></h3>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
+            Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
+            source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+            of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+            during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+            section 1.10.32.</p>
           <div class="row">
             <div class="col-sm-6 ">
               <ul class="list-unstyled mr-auto">
@@ -320,7 +334,7 @@
           </div>
         </div>
       </div>
-     
+
     </div>
   </section>
   <!-- Room section Exit -->
@@ -432,176 +446,184 @@
   </section>
   <!-- Gallery section Exit -->
 
-    <!-- Local Attraction start -->
-    <section id="LocalAttraction" class=" attraction_wrapper"  >
-      <div class="container ">
-        <div class="row">
-          <div class="col-sm-12 section-title text-center mb-5">
-            <h3>Local Attraction</h3>
+  <!-- Local Attraction start -->
+  <section id="LocalAttraction" class=" attraction_wrapper">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h3>Local Attraction</h3>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="row justify-content-between align-items-center">
+        <div class="col-sm-12 section-title text-center mb-5">
+        </div>
+        <div class="col-lg-5 mb-4 order-1 order-lg-1 mb-lg-0">
+          <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+        </div>
+        <div class="col-lg-7 ps-lg-5 text-center order-2 order-lg-2 text-lg-start">
+          <div class="my-3 my-lg-0">
+            <h4 class="mb-5">Six Flags Magic Mountain</h4>
+            <p>
+
+              A 262-acre theme park famously known for their exhilarating roller-coasters and live entertainment.
+
+              <br><br>
+              <i class="fas fa-map-marker-alt new"></i> 26101 Magic Mountain Pkwy, Valencia, CA 91355.
+
+            </p>
+            <a target="_blank" href="https://www.sixflags.com/magicmountain" class="main-btn mt-4">Know More</a>
           </div>
         </div>
-          <div data-aos="zoom-in" class="row justify-content-between align-items-center">
-            <div class="col-sm-12 section-title text-center mb-5">
-            </div>
-              <div class="col-lg-5 mb-4 order-1 order-lg-1 mb-lg-0">
-                  <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
-              </div>
-              <div class="col-lg-7 ps-lg-5 text-center order-2 order-lg-2 text-lg-start">
-                  <div class="my-3 my-lg-0">
-                      <h4 class="mb-5">Six Flags Magic Mountain</h4>
-                      <p>
 
-                          A 262-acre theme park famously known for their exhilarating roller-coasters and live entertainment.
-
-                          <br><br> 
-                          <i class="fas fa-map-marker-alt new"></i> 26101 Magic Mountain Pkwy, Valencia, CA 91355.
-                          
-                      </p>
-                      <a target="_blank" href="https://www.sixflags.com/magicmountain" class="main-btn mt-4">Know More</a>
-                  </div>
-              </div>
-              
-          </div> 
       </div>
-      <div data-aos="zoom-in" class="container mt-5">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-lg-7 ps-lg-5 order-2 order-lg-1 text-center text-lg-start">
-                <div class="my-3 my-lg-0">
-                    <h4 class="mb-5"> Universal Studio</h4>
-                    <p>
-                      One of the oldest and most famous film studio and theme park. Full fun and entertainment for all age group from ride dine and shop and movies too. 
-                      Unforgettable a guided bus tour of behind the scene film sets and studios.
-                      <br> <br>
-                      <i class="fas fa-map-marker-alt new"></i> 100 Universal City Plaza, Universal City, CA 91608
-                    </p>
-                    <a target="_blank" href="https://www.universalstudioshollywood.com/web/en/us" class="main-btn mt-4">Know More</a>
-
-                </div>
-            </div>
-            <div class="col-lg-5 mb-4 order-1  mb-lg-0">
-              <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
-          </div>
-        </div> 
     </div>
     <div data-aos="zoom-in" class="container mt-5">
       <div class="row justify-content-between align-items-center">
-          <div class="col-lg-5 mb-4 order-1 order-lg-1 mb-lg-0">
-              <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
-          </div>
-          <div class="col-lg-7 ps-lg-5 text-center order-2  text-lg-start">
-              <div class="my-3 my-lg-0">
-                  <h4 class="mb-5">Nethercutt Musseum</h4>
-                  
-                  <p>
-                      Proudly known as one of America's five greatest automobile museums. Self-guided tours are available throughout the museum with the exception of "The Nethercutt Collection" where you will need to be accompanied by a tour guide.   The Collection consists of the lower salon, grand salon, automobile collectibles and antiques, and instruments. <br> <br> 
-                      <i class="fas fa-map-marker-alt new"></i>15151 Bledsoe St, Sylmar, CA 91342
-                  </p>
-                  <a target="_blank" href="https://www.nethercuttcollection.org/" class="main-btn mt-4">Know More</a>
-              </div>
-          </div>
-          
-      </div> 
-  </div>
-  <div data-aos="zoom-in" class="container mt-5">
-    <div class="row justify-content-between align-items-center">
         <div class="col-lg-7 ps-lg-5 order-2 order-lg-1 text-center text-lg-start">
-            <div class="my-3 my-lg-0">
-                <h4 class="mb-5"> Wildlife Learning Center</h4>
-                
-                <p>
-                  Wildlife Learning Center is a zoological park dedicated to providing care to rescued animals and offers genral public a visit and also organizes tour. <br> <br> 
-                  <i class="fas fa-map-marker-alt new"></i> 16027 Yarnell St, Sylmar, CA 91342
-                </p>
-                <a href="https://wildlifelearningcenter.org/" target="_blank" class="main-btn mt-4">Know More</a>
-            </div>
+          <div class="my-3 my-lg-0">
+            <h4 class="mb-5"> Universal Studio</h4>
+            <p>
+              One of the oldest and most famous film studio and theme park. Full fun and entertainment for all age group
+              from ride dine and shop and movies too.
+              Unforgettable a guided bus tour of behind the scene film sets and studios.
+              <br> <br>
+              <i class="fas fa-map-marker-alt new"></i> 100 Universal City Plaza, Universal City, CA 91608
+            </p>
+            <a target="_blank" href="https://www.universalstudioshollywood.com/web/en/us" class="main-btn mt-4">Know
+              More</a>
+
+          </div>
         </div>
         <div class="col-lg-5 mb-4 order-1  mb-lg-0">
-         <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+          <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+        </div>
       </div>
-    </div> 
-  </div>
-  <div data-aos="zoom-in" class="container mt-5">
+    </div>
+    <div data-aos="zoom-in" class="container mt-5">
       <div class="row justify-content-between align-items-center">
-          <div class="col-lg-5 mb-4 order-1 order-lg-1 mb-lg-0">
-              <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+        <div class="col-lg-5 mb-4 order-1 order-lg-1 mb-lg-0">
+          <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+        </div>
+        <div class="col-lg-7 ps-lg-5 text-center order-2  text-lg-start">
+          <div class="my-3 my-lg-0">
+            <h4 class="mb-5">Nethercutt Musseum</h4>
+
+            <p>
+              Proudly known as one of America's five greatest automobile museums. Self-guided tours are available
+              throughout the museum with the exception of "The Nethercutt Collection" where you will need to be
+              accompanied by a tour guide. The Collection consists of the lower salon, grand salon, automobile
+              collectibles and antiques, and instruments. <br> <br>
+              <i class="fas fa-map-marker-alt new"></i>15151 Bledsoe St, Sylmar, CA 91342
+            </p>
+            <a target="_blank" href="https://www.nethercuttcollection.org/" class="main-btn mt-4">Know More</a>
           </div>
-          <div class="col-lg-7 ps-lg-5 text-center order-2 order-lg-2 text-lg-start">
-              <div class="my-3 my-lg-0">
-                  <h4 class="mb-5">Hollywood Walk of Fame</h4>
-                  <p> 
-                      The Hollywood Walk of Fame The famous sight attraction is comprised of over 2,600+ brass stars of famous celebrity of Hollywood from actor to director to Musician and more. Also see the Dolby theatre and famous Chinese Theatre Along and many more in lane. <br> <br>
-                      <i class="fas fa-map-marker-alt new"></i> 7018 Hollywood Blvd, Los Angeles, CA 90028
-                  </p>
-                  <a target="_blank" href="https://walkoffame.com/ " class="main-btn mt-4">Know More</a>
-              </div>
+        </div>
+
+      </div>
+    </div>
+    <div data-aos="zoom-in" class="container mt-5">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-7 ps-lg-5 order-2 order-lg-1 text-center text-lg-start">
+          <div class="my-3 my-lg-0">
+            <h4 class="mb-5"> Wildlife Learning Center</h4>
+
+            <p>
+              Wildlife Learning Center is a zoological park dedicated to providing care to rescued animals and offers
+              genral public a visit and also organizes tour. <br> <br>
+              <i class="fas fa-map-marker-alt new"></i> 16027 Yarnell St, Sylmar, CA 91342
+            </p>
+            <a href="https://wildlifelearningcenter.org/" target="_blank" class="main-btn mt-4">Know More</a>
           </div>
-          
-      </div> 
-  </div>
+        </div>
+        <div class="col-lg-5 mb-4 order-1  mb-lg-0">
+          <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+        </div>
+      </div>
+    </div>
+    <div data-aos="zoom-in" class="container mt-5">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-5 mb-4 order-1 order-lg-1 mb-lg-0">
+          <img src="images/Banner/Banner-10.jpeg" class="img-fluid rounded-3" alt="">
+        </div>
+        <div class="col-lg-7 ps-lg-5 text-center order-2 order-lg-2 text-lg-start">
+          <div class="my-3 my-lg-0">
+            <h4 class="mb-5">Hollywood Walk of Fame</h4>
+            <p>
+              The Hollywood Walk of Fame The famous sight attraction is comprised of over 2,600+ brass stars of famous
+              celebrity of Hollywood from actor to director to Musician and more. Also see the Dolby theatre and famous
+              Chinese Theatre Along and many more in lane. <br> <br>
+              <i class="fas fa-map-marker-alt new"></i> 7018 Hollywood Blvd, Los Angeles, CA 90028
+            </p>
+            <a target="_blank" href="https://walkoffame.com/ " class="main-btn mt-4">Know More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
 
-     <!-- Local Attraction end -->
+  <!-- Local Attraction end -->
 
 
- <section id="contact" class="contact_wrapper">
-        <div class="container ">
-            <div class="row mb-5">
-                <div class="col-sm-12 section-title text-center">
-                    <h3>Contact Info</h3>
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-                    <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
-                    <p>Hospital Rd, batshi, Siliguri, West Bengal 734426</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-                    <h4><i class="fas fa-phone-alt"></i>Phone</h4>
-                    <p>+91 7001024450</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-                    <h4><i class="fas fa-envelope"></i> Email</h4>
-                    <p>test@gmail.com</p>
-                </div>
-            </div>
-            <div class="row pt-5">
-                <div class="col-lg-12 p-2">
-                    <div class="map">
-                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.307026385977!2d88.17587791447667!3d26.606603779607102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e44d5a9e431e29%3A0x5f896212a3e32ca0!2sHira%20Jewellers!5e0!3m2!1sen!2sin!4v1666080956478!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
+  <section id="contact" class="contact_wrapper">
+    <div class="container ">
+      <div class="row mb-5">
+        <div class="col-sm-12 section-title text-center">
+          <h3>Contact Info</h3>
         </div>
-        <div class="container mt-5">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-3"></div>
-                <div class="col-lg-6 pe-lg-5 text-lg-start text-center">
-                    <form method="post" action="sendmail.php">
-                        <h4 class="text-center mb-5">Write Your Message</h4>
-                        <div class="mb-4 ">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name..."
-                                autocomplete="off">
-                        </div>
-                        <div class="mb-4 mt-4">
-                            <input type="number" name="phoneNo" class="form-control" placeholder="Your Phone..."
-                                autocomplete="off">
-                        </div>
-                        <div class="mb-4 mt-4">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email..."
-                                autocomplete="off">
-                        </div>
-                        <div class="mb-4 mt-4">
-                            <textarea name="message" rows="8" class="form-control" id="message"
-                                placeholder="Write a Message..." autocomplete="off"></textarea>
-                        </div>
-                        <button type="submit" name="send" class="main-btn">Submit</button>
-                    </form>
-                </div>
-                <div class="col-3"></div>
-            </div>
+      </div>
+      <div class="row ">
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+          <p>Hospital Rd, batshi, Siliguri, West Bengal 734426</p>
         </div>
-    </section>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <h4><i class="fas fa-phone-alt"></i>Phone</h4>
+          <p>+91 7001024450</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <h4><i class="fas fa-envelope"></i> Email</h4>
+          <p>test@gmail.com</p>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-lg-12 p-2">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.307026385977!2d88.17587791447667!3d26.606603779607102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e44d5a9e431e29%3A0x5f896212a3e32ca0!2sHira%20Jewellers!5e0!3m2!1sen!2sin!4v1666080956478!5m2!1sen!2sin"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-3"></div>
+        <div class="col-lg-6 pe-lg-5 text-lg-start text-center">
+          <form method="post" action="sendmail.php">
+            <h4 class="text-center mb-5">Write Your Message</h4>
+            <div class="mb-4 ">
+              <input type="text" name="name" class="form-control" placeholder="Your Name..." autocomplete="off">
+            </div>
+            <div class="mb-4 mt-4">
+              <input type="number" name="phoneNo" class="form-control" placeholder="Your Phone..." autocomplete="off">
+            </div>
+            <div class="mb-4 mt-4">
+              <input type="email" name="email" class="form-control" placeholder="Your Email..." autocomplete="off">
+            </div>
+            <div class="mb-4 mt-4">
+              <textarea name="message" rows="8" class="form-control" id="message" placeholder="Write a Message..."
+                autocomplete="off"></textarea>
+            </div>
+            <button type="submit" name="send" class="main-btn">Submit</button>
+          </form>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer section -->
   <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
@@ -609,9 +631,11 @@
       <div class="row">
         <div class="text-center col-12">
           <div class="logo">
-            <img src="https://xpressinnmarshall.com/wp-content/uploads/2023/09/xpressinn-main-sign.png" class="img-fluid" alt="">
+            <img src="https://xpressinnmarshall.com/wp-content/uploads/2023/09/xpressinn-main-sign.png"
+              class="img-fluid" alt="">
           </div>
-          <p class="text-white">Featuring an outdoor swimming pool, Xecutive Inn and Suites Sarande offers rooms in Sarande, a
+          <p class="text-white">Featuring an outdoor swimming pool, Xecutive Inn and Suites Sarande offers rooms in
+            Sarande, a
             3-minute walk from the beachfront. Free WiFi access is available throughout the property. With a balcony or
             terrace with sea views, each air-conditioned room is equipped with a satellite flat-screen TV and safety
             deposit box. The private bathroom comes with a bath or shower and hairdryer. Guests can enjoy quick snacks
@@ -619,7 +643,7 @@
         </div>
       </div>
       <hr class="text-white">
-      <div  class="row text-center">
+      <div class="row text-center">
         <div class=" col-12 mt-5">
           <h5>Stay Connected</h5>
           <ul class=" social-network d-flex justify-content-center align-items-center p-0">
@@ -632,7 +656,8 @@
       </div>
     </div>
     <div class="container-fluid copyright-section">
-      <p class="text-white">Copyright <a href="https://www.linkedin.com/in/pradyuman-kr/"><b>iamswarnkar</b></a> All Rights Reserved</p>
+      <p class="text-white">Copyright <a href="https://www.linkedin.com/in/pradyuman-kr/"><b>iamswarnkar</b></a> All
+        Rights Reserved</p>
     </div>
   </section>
   <!-- Footer section exit -->

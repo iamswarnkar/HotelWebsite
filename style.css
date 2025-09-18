@@ -50,6 +50,20 @@ a {
   text-decoration: none;
 }
 
+.form-control[type="date"]:not(.has-value) {
+  color: transparent;
+}
+
+/* 2. When a date IS selected, make the text visible again */
+.form-control[type="date"].has-value {
+  color: inherit;
+}
+/* Ensure our floating label appears correctly even with transparent text */
+.form-floating .form-control {
+  height: calc(3.5rem + 2px);
+  padding: 1rem 0.75rem;
+}
+
 /* ::-webkit-scrollbar {
   width: 0.375rem;
 } */
